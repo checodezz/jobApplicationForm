@@ -19,16 +19,16 @@ formInput.addEventListener('submit', function (event) {
     }
 
     const card = document.createElement('card');
-    card.className = 'card';
+    card.className = 'card my-2';
+
+    const cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
 
     const cardTitle = document.createElement('h2');
     cardTitle.className = 'card-title';
     cardTitle.textContent = 'Application Submitted';
 
-    card.appendChild(cardTitle);
-
-    const cardBody = document.createElement('div');
-    cardBody.className = 'card-body';
+    cardBody.appendChild(cardTitle);
 
     const showName = document.createElement('p');
     showName.className = 'card-text';
