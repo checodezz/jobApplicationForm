@@ -10,11 +10,12 @@
 </head>
 
 <body class="container">
-    <h1 class="text-center">Job Application Form</h1>
 
     <form id="formInput">
         <div class="card">
             <div class="card-body">
+                <h1 class="text-center">Job Application Form</h1>
+
                 <label for="nameInput">Name:</label><br>
                 <input type="text" id="nameInput" required><br><br>
 
@@ -22,9 +23,9 @@
                 <input type="email" id="emailInput" required><br><br>
 
                 <label for="">Upload Resume:</label><br>
-                <input type="file" name="" id="mediaUploadInput"><br><br>
+                <input type="file" name="" id="mediaUploadInput" required><br><br>
 
-                <label for="selectPositionInput"></label>
+                <label for="selectPositionInput">Position Applied For:</label><br>
                 <select id="selectPositionInput">
                     <option value="Software Engineer">Software Engineer</option>
                     <option value="Data Analyst">Data Analyst</option>
@@ -47,19 +48,19 @@
 
                 <label for="">Skils (Check all that apply):</label><br>
                 <label for="programming">
-                    <input type="checkbox" id="programming" value="Programming"> Programming
+                    <input type="checkbox" id="programming" name="skills" value="Programming"> Programming
                 </label><br>
 
                 <label for="communication">
-                    <input type="checkbox" id="communication" value="Communication"> Communication
+                    <input type="checkbox" id="communication" name="skills" value="Communication"> Communication
                 </label><br>
 
                 <label for="teamWork">
-                    <input type="checkbox" id="teamWork" value="Teamwork"> Teamwork
+                    <input type="checkbox" id="teamWork" name="skills" value="Teamwork"> Teamwork
                 </label><br>
 
                 <label for="problemSolving">
-                    <input type="checkbox" id="problemSolving" value="Problem Solving"> Problem Solving
+                    <input type="checkbox" id="problemSolving" name="skills" value="Problem Solving"> Problem Solving
                 </label><br><br>
 
                 <label for="">Additional Information:</label>
@@ -70,6 +71,10 @@
             </div>
         </div>
     </form>
+
+    <div id="showApplicationStatus">
+
+    </div>
     <script src="./script.js"></script>
 </body>
 
