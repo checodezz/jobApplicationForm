@@ -9,9 +9,67 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1></h1>
+<body class="container">
+    <h1 class="text-center">Job Application Form</h1>
 
+    <form id="formInput">
+        <div class="card">
+            <div class="card-body">
+                <label for="nameInput">Name:</label><br>
+                <input type="text" id="nameInput" required><br><br>
+
+                <label for="emailInput">Email:</label><br>
+                <input type="email" id="emailInput" required><br><br>
+
+                <label for="">Upload Resume:</label><br>
+                <input type="file" name="" id="mediaUploadInput"><br><br>
+
+                <label for="selectPositionInput"></label>
+                <select id="selectPositionInput">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Data Analyst">Data Analyst</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <option value="Graphic Designer">Graphic Designer</option>
+                    <option value="HR Manager">HR Manager</option>
+                </select><br><br>
+
+
+                <label for="">Years Of Experience:</label><br>
+                <label for="2yrExp">
+                    <input type="radio" value="0-2" name="experience" id="2yrExp"> 0-2 years
+                </label><br>
+                <label for="5yrExp">
+                    <input type="radio" value="2-5" name="experience" id="5yrExp"> 2-5 years
+                </label><br>
+                <label for="5+yrExp">
+                    <input type="radio" value="5+" name="experience" id="5+yrExp">5+ years
+                </label><br><br>
+
+                <label for="">Skils (Check all that apply):</label><br>
+                <label for="programming">
+                    <input type="checkbox" id="programming" value="Programming"> Programming
+                </label><br>
+
+                <label for="communication">
+                    <input type="checkbox" id="communication" value="Communication"> Communication
+                </label><br>
+
+                <label for="teamWork">
+                    <input type="checkbox" id="teamWork" value="Teamwork"> Teamwork
+                </label><br>
+
+                <label for="problemSolving">
+                    <input type="checkbox" id="problemSolving" value="Problem Solving"> Problem Solving
+                </label><br><br>
+
+                <label for="">Additional Information:</label>
+                <br>
+                <textarea name="" id="additionalInfo" cols="50" rows="4"></textarea><br><br>
+
+                <button type="submit" class="btn btn-primary">Submit</button><br>
+            </div>
+        </div>
+    </form>
     <script src="./script.js"></script>
 </body>
 
